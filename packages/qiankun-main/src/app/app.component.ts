@@ -23,6 +23,12 @@ export class AppComponent implements OnInit {
         entry: 'http://localhost:3002/',
         container: '#container',
         activeRule: '/app-vue3-vite',
+      },
+      {
+        name: 'app-ng17',
+        entry: 'http://localhost:3003/',
+        container: '#container',
+        activeRule: '/app-ng17',
       }
     ]);
     start();

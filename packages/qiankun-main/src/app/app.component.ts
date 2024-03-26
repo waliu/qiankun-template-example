@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { registerMicroApps, start } from "qiankun";
 
 @Component({
-  selector: 'qiankun-main-root',
+  selector: 'q-k-main-root',
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
@@ -12,12 +12,6 @@ import { registerMicroApps, start } from "qiankun";
 export class AppComponent implements OnInit {
   ngOnInit(): void {
     registerMicroApps([
-      {
-        name: 'app-vue3',
-        entry: 'http://localhost:4202/child/app-vue3/',
-        container: '#container',
-        activeRule: '/app-vue3',
-      },
       {
         name: 'app-vue3-vite',
         entry: 'http://localhost:3002/',

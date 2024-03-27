@@ -18,6 +18,7 @@ if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
 
 function render(props: QiankunProps = {}) {
   const {container} = props as any;
+  instance = createApp(App)
   instance.use(routes)
   instance.use(createPinia())
   instance.mount(

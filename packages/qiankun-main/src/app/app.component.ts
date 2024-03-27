@@ -1,11 +1,11 @@
 import { Component, NgZone, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { registerMicroApps, start } from "qiankun";
 
 @Component({
   selector: 'q-k-main-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -19,10 +19,16 @@ export class AppComponent implements OnInit {
         activeRule: '/app-vue3-vite',
       },
       {
-        name: 'app-ng17',
+        name: 'app-ng-17',
         entry: 'http://localhost:3003/',
         container: '#container',
         activeRule: '/app-ng17',
+      },
+      {
+        name: 'app-react-18',
+        entry: 'http://localhost:3000/',
+        container: '#container',
+        activeRule: '/app-react-18',
       }
     ]);
     start();

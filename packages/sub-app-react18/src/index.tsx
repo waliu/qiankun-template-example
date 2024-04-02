@@ -39,6 +39,9 @@ export async function mount(props: any) {
 export async function unmount(props: any) {
   const {container} = props;
   // ReactDOM.unmountComponentAtNode(container ? container.querySelector('#root') : document.querySelector('#root'));
+  root.unmount();
+  // @ts-ignore
+  root = null;
 }
 
 // If you want to start measuring performance in your app, pass a function

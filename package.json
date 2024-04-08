@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "qiankun-template-example",
   "private": true,
   "workspaces": [
     "packages/*"

@@ -1,6 +1,6 @@
-import { Component, NgZone, OnInit } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
-import { registerMicroApps, start } from "qiankun";
+import {Component, NgZone, OnInit} from '@angular/core';
+import {RouterLink, RouterOutlet} from '@angular/router';
+import {registerMicroApps, start} from "qiankun";
 
 @Component({
   selector: 'q-k-main-root',
@@ -29,6 +29,12 @@ export class AppComponent implements OnInit {
         entry: 'http://localhost:3000/',
         container: '#container',
         activeRule: '/app-react-18',
+      },
+      {
+        name: 'app-html',
+        entry: 'http://localhost:3004/',
+        container: '#container',
+        activeRule: '/app-html',
       }
     ]);
     start();

@@ -1,0 +1,15 @@
+{
+  "name": "sub-app-html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env PORT=3004 http-server . --cors"
+  },
+  "author": "ChenYu",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "http-server": "^14.1.1"
+  }
+}

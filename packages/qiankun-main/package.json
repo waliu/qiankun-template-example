@@ -20,15 +20,14 @@
     "@angular/router": "^20.0.3",
     "qiankun": "^2.10.16",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.15.1"
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@angular/build": "^20.0.2",
     "@angular/cli": "^20.0.2",
     "@angular/compiler-cli": "^20.0.3",
     "@types/jasmine": "~5.1.0",
-    "jasmine-core": "~5.1.0",
+    "jasmine-core": "~5.7.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",

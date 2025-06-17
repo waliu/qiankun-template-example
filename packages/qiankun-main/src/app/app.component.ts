@@ -3,11 +3,10 @@ import {RouterLink, RouterOutlet} from '@angular/router';
 import {registerMicroApps, start} from "qiankun";
 
 @Component({
-  selector: 'q-k-main-root',
-  standalone: true,
-  imports: [RouterOutlet, RouterLink],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'q-k-main-root',
+    imports: [RouterOutlet, RouterLink],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {

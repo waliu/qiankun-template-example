@@ -8,9 +8,7 @@ export default {
   output: {
     library: `sub-app-ng17-[name]`,
     libraryTarget: 'umd',
-    chunkLoadingGlobal: `webpackJsonp_sub-app-ng17`, // webpack 5 需要把 jsonpFunction 替换成 chunkLoadingGlobal
-  },
-  externals: {
-    'zone.js': 'Zone',
-  },
+    // webpack 5 需要把 jsonpFunction 替换成 chunkLoadingGlobal
+    chunkLoadingGlobal: `webpackJsonp_sub-app-ng17`,
+  }
 } as Configuration;
